@@ -1,9 +1,11 @@
 function updateText() {
-  let p = document.querySelector(".about").innerHTML;
+  let aboutParagraph = document.querySelector(".about").innerHTML;
 
-  const newp = p.replace(/the/g, "banana").replace(/The/g, "Banana");
+  const replaceWord = aboutParagraph
+    .replace(/the/g, "banana")
+    .replace(/The/g, "Banana");
 
-  document.querySelector(".about").innerHTML = newp;
+  document.querySelector(".about").innerHTML = replaceWord;
 }
 
 setTimeout(updateText, 3000);

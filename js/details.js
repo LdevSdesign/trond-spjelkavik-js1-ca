@@ -1,5 +1,5 @@
-const q = document.location.search;
-const params = new URLSearchParams(q);
+const querystring = document.location.search;
+const params = new URLSearchParams(querystring);
 
 const randomUserUrl = "https://randomuser.me/api/";
 const userUrl = `${randomUserUrl}?seed=`;
